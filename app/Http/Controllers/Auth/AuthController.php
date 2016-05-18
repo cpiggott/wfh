@@ -69,8 +69,4 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
-
-
-
-    
 }
