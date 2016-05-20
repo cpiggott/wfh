@@ -32,6 +32,14 @@ class LinksController extends Controller
         }
     }
 
+    public function getOOO(){
+        if($user->links_active){
+            //Update status
+        } else {
+            //Render view
+        }
+    }
+
     public function getOTW(){
         $user = Auth::user();
 
@@ -49,11 +57,7 @@ class LinksController extends Controller
         }
     }
 
-    public function getOOO(){
-
-    }
-
-    public function getInOffice(){
+    public function getIn(){
         $user = Auth::user();
 
         if($user->links_active){
@@ -69,5 +73,7 @@ class LinksController extends Controller
 
         }
     }
+
+
 
 }
