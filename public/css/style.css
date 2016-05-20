@@ -1,0 +1,56 @@
+body {
+  font-weight: 300;
+}
+
+/* Nav */
+.navbar {
+  background-color: #512DA8;
+}
+
+.navbar .navbar-brand {
+  color: #FFFFFF;
+}
+
+.navbar .navbar-nav>li>a {
+  color: #CDCDCD;
+}
+
+.navbar .navbar-nav>li>a:hover {
+  color: #777777;
+}
+
+.navbar .navbar-nav>.open>a {
+  background-color: #512DA8;
+}
+
+/* Dashboard */
+.dashboard {
+}
+
+.dashboard .dashboard-user {
+  text-align: center;
+}
+
+.dashboard .dashboard-user-name {
+  background-color: #512DA8;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.dashboard .dashboard-user-status {
+  padding: 40px 15px;
+}
+
+.dashboard .dashboard-user-status-limit {
+  height: 25px;
+  font-size: 18px;
+}
+
+.dashboard .dashboard-user-status-text {
+  font-size: 35px;
+}
+
+.dashboard .dashboard-user-status-time {
+  font-size: 16px;
+  color: #CDCDCD;
+}
