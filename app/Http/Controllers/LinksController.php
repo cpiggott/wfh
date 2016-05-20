@@ -22,6 +22,8 @@ class LinksController extends Controller
         $this->middleware('auth');
     }
 
+
+    //Working from home
     public function getWfh(){
         $user = Auth::user();
 
@@ -32,6 +34,7 @@ class LinksController extends Controller
         }
     }
 
+    //Out of office
     public function getOOO(){
         if($user->links_active){
             //Update status
@@ -40,6 +43,7 @@ class LinksController extends Controller
         }
     }
 
+    //On the way
     public function getOTW(){
         $user = Auth::user();
 
@@ -57,6 +61,7 @@ class LinksController extends Controller
         }
     }
 
+    //In the office
     public function getIn(){
         $user = Auth::user();
 
