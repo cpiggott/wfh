@@ -24,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $names = ['first' => 'Bob Specht', 'second' => 'Chris Piggott', 'third' =>'Blake Miller'];
+        return view('home', $names);
     }
 }

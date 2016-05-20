@@ -9,7 +9,7 @@
                 <div class="dashboard-user col-md-4">
                   <div class="panel panel-default">
                     <div class="dashboard-user-name panel-heading">
-                      <h3 class="panel-title">Bob Specht</h3>
+                      <h3 class="panel-title">{{ $first }}</h3>
                     </div>
                     <div class="dashboard-user-status panel-body">
                       <div class="dashboard-user-status-limit">
@@ -27,7 +27,7 @@
                 <div class="dashboard-user col-md-4">
                   <div class="panel panel-default">
                     <div class="dashboard-user-name panel-heading">
-                      <h3 class="panel-title">Chris Piggott</h3>
+                      <h3 class="panel-title">{{ $second }}</h3>
                     </div>
                     <div class="dashboard-user-status panel-body">
                       <div class="dashboard-user-status-limit">
@@ -45,7 +45,7 @@
                 <div class="dashboard-user col-md-4">
                   <div class="panel panel-default">
                     <div class="dashboard-user-name panel-heading">
-                      <h3 class="panel-title">Blake Miller</h3>
+                      <h3 class="panel-title">{{ $third }}</h3>
                     </div>
                     <div class="dashboard-user-status panel-body">
                       <div class="dashboard-user-status-limit">
