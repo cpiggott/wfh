@@ -4,7 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+
 use Auth;
+
+use App\Status;
+
 
 class LinksController extends Controller
 {
@@ -28,17 +32,42 @@ class LinksController extends Controller
         }
     }
 
-    public function getEnRoute(){
+    public function getOTW(){
         $user = Auth::user();
 
         if($user->links_active){
             //Update their status to EnRoute
-            return $user->statuses;
+            $status = Status::create([
+                'status' => 'OTW',
+                'user_id' => $user->id
+            ]);
+
+            return redirect('home')->with('status', 'Updated Status to OTW');;
         } else {
             //Render the view to save link
 
+        }
+    }
 
+    public function getOOO(){
+
+    }
+
+    public function getInOffice(){
+        $user = Auth::user();
+
+        if($user->links_active){
+            //Update their status to EnRoute
+            $status = Status::create([
+                'status' => 'In',
+                'user_id' => $user->id
+            ]);
+
+            return redirect('home')->with('status', 'Updated Status to In');;
+        } else {
+            //Render the view to save link
 
         }
     }
+
 }

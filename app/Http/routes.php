@@ -19,4 +19,4 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/enroute', 'LinksController@getEnRoute');
+Route::get('/enroute', 'LinksController@getOTW');
