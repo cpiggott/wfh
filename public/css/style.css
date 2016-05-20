@@ -24,7 +24,12 @@ body {
 }
 
 /* Dashboard */
-.dashboard {
+.dashboard {}
+
+.dashboard .dashboard-team-name {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px;
 }
 
 .dashboard .dashboard-user {
@@ -34,7 +39,12 @@ body {
 .dashboard .dashboard-user-name {
   background-color: #512DA8;
   color: #FFFFFF;
+  padding: 15px;
+}
+
+.dashboard .dashboard-user-name h3 {
   font-size: 20px;
+  font-weight: 300;
 }
 
 .dashboard .dashboard-user-status {
@@ -47,10 +57,38 @@ body {
 }
 
 .dashboard .dashboard-user-status-text {
-  font-size: 35px;
+  font-size: 50px;
+  line-height: 55px;
 }
 
 .dashboard .dashboard-user-status-time {
   font-size: 16px;
   color: #CDCDCD;
+}
+
+/* Intent */
+.intent {}
+
+.intent-button {
+  margin-bottom: 20px;
+}
+
+.intent-button .btn-intent {
+  height: 180px;
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #512DA8;
+  border: 1px solid #512DA8;
+  border-radius: 4px;
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.intent-button .btn-intent:active {
+  background-color: #512DA8;
+  color: #FFFFFF;
+}
+
+.intent-button .btn-intent:focus {
+  outline: 5px auto #512DA8;
 }

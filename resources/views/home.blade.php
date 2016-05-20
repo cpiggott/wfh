@@ -3,9 +3,12 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-
+        <div class="col-md-12">
             <div class="dashboard">
+              <div class="dashboard-team">
+                <div class="dashboard-team-name">
+                  <h3>Think Big</h3>
+                </div>
                 <div class="dashboard-user col-md-4">
                   <div class="panel panel-default">
                     <div class="dashboard-user-name panel-heading">
@@ -60,6 +63,18 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="intent">
+              <div class="intent-button col-md-4">
+                <button class="btn btn-intent" type="submit">Lunch</button>
+              </div>
+              <div class="intent-button col-md-4">
+                <button class="btn btn-intent" type="submit">2pm</button>
+              </div>
+              <div class="intent-button col-md-4">
+                <button class="btn btn-intent" type="submit">All Day</button>
+              </div>
             </div>
         </div>
     </div>
